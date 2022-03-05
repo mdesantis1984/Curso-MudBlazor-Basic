@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "dyHLdak3gTuQi4jl1/jISYdl425CllRGreyj0mI8ZN8=",
+  "Source": "CursoBlazor",
+  "BasePath": "_content/CursoBlazor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CursoBlazor\\wwwroot",
+      "Source": "CursoBlazor",
+      "ContentRoot": "D:\\Escritorio\\Curso Blazor\\CursoBlazor\\CursoBlazor\\wwwroot\\",
+      "BasePath": "_content/CursoBlazor",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\mdesa\\.nuget\\packages\\mudblazor\\6.0.2\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "D:\\Escritorio\\Curso Blazor\\CursoBlazor\\CursoBlazor\\wwwroot\\favicon.ico",
+      "SourceId": "CursoBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Escritorio\\Curso Blazor\\CursoBlazor\\CursoBlazor\\wwwroot\\",
+      "BasePath": "_content/CursoBlazor",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

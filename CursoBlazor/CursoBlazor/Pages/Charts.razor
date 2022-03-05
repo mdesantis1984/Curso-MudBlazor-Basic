@@ -1,0 +1,156 @@
+﻿@page "/ComponenteCharts"
+
+<h3>Charts</h3>
+
+<div>
+    <MudChart ChartType="ChartType.Bar" ChartSeries="@Series" @bind-SelectedIndex="Index" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
+</div>
+
+<MudText Typo="Typo.h6">Selected portion of the chart: @Index</MudText>
+
+
+@code {
+    private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    public List<ChartSeries> Series = new List<ChartSeries>()
+    {
+        new ChartSeries() { Name = "United States", Data = new double[] { 40, 20, 25, 27, 46, 60, 48, 80, 15 } },
+        new ChartSeries() { Name = "Germany", Data = new double[] { 19, 24, 35, 13, 28, 15, 13, 16, 31 } },
+        new ChartSeries() { Name = "Sweden", Data = new double[] { 8, 6, 11, 13, 4, 16, 10, 16, 18 } },
+    };
+    public string[] XAxisLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+}
+
+
+<MudChart ChartType="ChartType.Donut" LegendPosition="@LegendPosition" Width="300px" Height="300px"
+          InputData="@data" InputLabels="@labels">
+</MudChart>
+
+
+
+<MudSelect Label="Legend Position" Variant="Variant.Outlined" OffsetY="true" Dense="true" T="@Position" ValueChanged="OnSelectedValue" Class="mt-4">
+    <MudSelectItem T="Position" Value="Position.Top">Top</MudSelectItem>
+    <MudSelectItem T="Position" Value="Position.Left">Left</MudSelectItem>
+    <MudSelectItem T="Position" Value="Position.Right">Right</MudSelectItem>
+    <MudSelectItem T="Position" Value="Position.Bottom">Bottom</MudSelectItem>
+    <MudSelectItem T="Position" Value="Position.Start">Start</MudSelectItem>
+    <MudSelectItem T="Position" Value="Position.End">End</MudSelectItem>
+</MudSelect>
+
+@code {
+    public double[] data = { 25, 77, 28, 5 };
+    public string[] labels = { "Oil", "Coal", "Gas", "Biomass" };
+
+    public Position LegendPosition { get; set; } = Position.Bottom;
+
+    private void OnSelectedValue(Position value)
+    {
+        switch(value)
+        {
+            case Position.Top:
+                LegendPosition = Position.Top;
+                break;
+            case Position.Left:
+                LegendPosition = Position.Left;
+                break;
+            case Position.Right:
+                LegendPosition = Position.Right;
+                break;
+            case Position.Bottom:
+                LegendPosition = Position.Bottom;
+                break;
+            case Position.Start:
+                LegendPosition = Position.Start;
+                break;
+            case Position.End:
+                LegendPosition = Position.End;
+                break;
+        }
+    }
+}
+
+
+
+<div>
+    <MudChart ChartType="ChartType.Line" ChartSeries="@Series2" @bind-SelectedIndex="Index1" XAxisLabels="@XAxisLabels2" Width="100%" Height="350px"></MudChart>
+    <MudButton @onclick="RandomizeData">Randomize Data</MudButton>
+    <MudText Typo="Typo.h6">Selected portion of the chart: @Index1</MudText>
+</div>
+
+@code {
+    private int Index1 = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    public List<ChartSeries> Series2 = new List<ChartSeries>()
+    {
+        new ChartSeries() { Name = "Series 1", Data = new double[] { 90, 79, 72, 69, 62, 62, 55, 65, 70 } },
+        new ChartSeries() { Name = "Series 2", Data = new double[] { 10, 41, 35, 51, 49, 62, 69, 91, 148 } },
+    };
+    public string[] XAxisLabels2 = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+
+    Random random = new Random();
+    public void RandomizeData()
+    {
+        var new_series = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Series 1", Data = new double[9] },
+            new ChartSeries() { Name = "Series 2", Data = new double[9] },
+        };
+        for (int i = 0; i < 9; i++)
+        {
+            new_series[0].Data[i] = random.NextDouble() * 100;
+            new_series[1].Data[i] = random.NextDouble() * 100;
+        }
+        Series2 = new_series;
+        StateHasChanged();
+    }
+}
+
+
+
+
+<MudPaper Class="pa-4">
+    <MudChart ChartType="ChartType.Pie" InputData="@data3" @bind-SelectedIndex="Index3" InputLabels="@labels3" Width="300px" Height="300px" />
+</MudPaper>
+<MudPaper Class="pa-4 mt-2 d-flex justify-center">
+    <MudButton OnClick="AddDataSize" Variant="Variant.Filled" Color="Color.Primary">Add</MudButton>
+    <MudButton @onclick="RandomizeData3" Variant="Variant.Filled" Class="mx-4">Randomize</MudButton>
+    <MudButton OnClick="RemoveDataSize" Variant="Variant.Filled" Color="Color.Secondary">Remove</MudButton>  
+</MudPaper>
+<MudText Typo="Typo.h6">Selected portion of the chart: @Index3</MudText>
+
+@code {
+    private int Index3 = -1; //default value cannot be 0 -> first selectedindex is 0.
+    int dataSize = 4;
+    double[] data3 = { 77, 25, 20, 5 };
+    string[] labels3 = { "Uranium", "Plutonium", "Thorium", "Caesium", "Technetium", "Promethium",
+                        "Polonium", "Astatine", "Radon", "Francium", "Radium", "Actinium", "Protactinium",
+                        "Neptunium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Mudblaznium" };
+
+    Random random3 = new Random();
+
+    void RandomizeData3()
+    {
+        var new_data = new double[dataSize];
+        for (int i = 0; i < new_data.Length; i++)
+            new_data[i] = random.NextDouble() * 100;
+        data3 = new_data;
+        StateHasChanged();
+    }
+
+    void AddDataSize()
+    {
+        if (dataSize < 20)
+        {
+            dataSize = dataSize + 1;
+            RandomizeData3();
+        }
+    }
+    void RemoveDataSize()
+    {
+        if (dataSize > 0)
+        {
+            dataSize = dataSize - 1;
+            RandomizeData3();
+        }
+    }
+}

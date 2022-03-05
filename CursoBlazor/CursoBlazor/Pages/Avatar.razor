@@ -1,0 +1,59 @@
+﻿@page "/ComponenteAvatar"
+
+<h3>Avatar</h3>
+
+@code {
+    int max = 3;
+    int spacing = 3;
+}
+
+
+<MudAvatar Color="Color.Primary">M</MudAvatar>
+<MudAvatar Color="Color.Secondary">U</MudAvatar>
+<MudAvatar Color="Color.Tertiary">D</MudAvatar>
+
+<br />
+<br />
+
+<MudAvatar Color="Color.Warning" Variant="Variant.Filled">
+    <MudIcon Color="Color.Dark" Icon="@Icons.Custom.Uncategorized.Radioactive" Size="Size.Large" />
+</MudAvatar>
+<MudAvatar Color="Color.Primary" Variant="Variant.Outlined">
+    <MudIcon Icon="@Icons.Custom.Brands.MudBlazor" />
+</MudAvatar>
+<MudAvatar Color="Color.Secondary" Variant="Variant.Outlined">
+    <MudIcon Icon="@Icons.Material.Filled.FormatListNumbered" />
+</MudAvatar>
+
+<br />
+<br />
+
+<MudAvatar Size="Size.Small" Color="Color.Primary">A</MudAvatar>
+<MudAvatar Size="Size.Medium" Color="Color.Primary">A</MudAvatar>
+<MudAvatar Size="Size.Large" Color="Color.Primary">A</MudAvatar>
+<MudAvatar Style="height:70px; width:70px; font-size:2rem;" Color="Color.Primary">A</MudAvatar>
+<MudAvatar Style="height:70px; width:70px; font-size:2rem;" Color="Color.Primary" Variant="Variant.Outlined">A</MudAvatar>
+<MudAvatar Size="Size.Large" Color="Color.Primary" Variant="Variant.Outlined">A</MudAvatar>
+<MudAvatar Size="Size.Medium" Color="Color.Primary" Variant="Variant.Outlined">A</MudAvatar>
+<MudAvatar Size="Size.Small" Color="Color.Primary" Variant="Variant.Outlined">A</MudAvatar>
+
+<MudAvatarGroup Max="@max" Spacing="@spacing" MaxColor="Color.Primary">
+    <MudAvatar Image="_content/MudBlazor.Docs/images/avatar_jonny.jpg" />
+    <MudAvatar Image="_content/MudBlazor.Docs/images/mony.png" />
+    <MudAvatar Image="_content/MudBlazor.Docs/images/toiletvisit.png" />
+    <MudAvatar Image="_content/MudBlazor.Docs/images/avatar_jonny.jpg" />
+    <MudAvatar Image="_content/MudBlazor.Docs/images/mony.png" />
+    <MudAvatar Image="_content/MudBlazor.Docs/images/toiletvisit.png" />
+</MudAvatarGroup>
+
+<br />
+<br />
+
+<MudGrid>
+    <MudItem xs="12" sm="6">
+        <MudSlider Min="0" Max="6" Step="0" @bind-Value="@max" Color="Color.Info">Max Avatars</MudSlider>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudSlider Min="0" Max="16" Step="0" @bind-Value="@spacing" Color="Color.Error">Spacing</MudSlider>
+    </MudItem>
+</MudGrid>

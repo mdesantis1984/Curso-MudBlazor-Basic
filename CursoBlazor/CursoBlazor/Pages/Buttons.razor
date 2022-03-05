@@ -1,0 +1,96 @@
+﻿@page "/ComponenteButtons"
+
+<h3>Buttons</h3>
+
+<MudGrid>
+
+    <MudItem md="12">
+        <MudButton Variant="Variant.Filled">Default</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary">Primary</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary">Secondary</MudButton>
+        <MudButton Variant="Variant.Filled" Disabled="true">Disabled</MudButton>
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Variant="Variant.Filled" DisableElevation="true" Style="@($"background-color:{Colors.Cyan.Lighten5}")">Disable elevation</MudButton>
+    </MudItem>
+
+    <MudItem>
+        <MudButton Variant="Variant.Outlined">Default</MudButton>
+        <MudButton Variant="Variant.Outlined" Color="Color.Primary">Primary</MudButton>
+        <MudButton Variant="Variant.Outlined" Color="Color.Secondary">Secondary</MudButton>
+        <MudButton Variant="Variant.Outlined" Disabled="true">Disabled</MudButton>
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true">Full Width Button</MudButton>
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" Color="Color.Error">Delete</MudButton>
+        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Send</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Custom.Uncategorized.Radioactive" Color="Color.Warning">Warning</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Mic" Disabled="true">Talk</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" Color="Color.Info" Size="Size.Small">Save</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" IconColor="Color.Secondary" Size="Size.Large">Save</MudButton>
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowDownward" Style="background-color: yellowgreen; color: white; width: 200px; height: 60px;">
+            Download Now
+        </MudButton>
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Link="https://github.com/MudBlazor/MudBlazor"
+                   Target="_blank"
+                   Variant="Variant.Filled"
+                   EndIcon="@Icons.Custom.Brands.GitHub"
+                   Color="Color.Primary">
+            GitHub Link
+        </MudButton>
+        <MudButton Link="https://github.com/MudBlazor/MudBlazor"
+                   Target="_blank"
+                   Variant="Variant.Text"
+                   EndIcon="@Icons.Custom.Brands.GitHub"
+                   Color="Color.Secondary"
+                   Style="text-transform:none">
+            GitHub Link
+        </MudButton>
+        <MudButton Link="https://github.com/MudBlazor/MudBlazor"
+                   Target="_blank"
+                   Variant="Variant.Outlined"
+                   EndIcon="@Icons.Custom.Brands.GitHub"
+                   Color="Color.Tertiary">
+            GitHub Link
+        </MudButton>
+
+    </MudItem>
+
+    <MudItem md="12">
+        <MudButton Disabled="@_processing" OnClick="ProcessSomething" Variant="Variant.Filled" Color="Color.Primary">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Click me</MudText>
+            }
+        </MudButton>
+        @code {
+        private bool _processing = false;
+
+        async Task ProcessSomething()
+        {
+            _processing = true;
+            await Task.Delay(2000);
+            _processing = false;
+        }
+        }
+    </MudItem>
+
+
+
+</MudGrid>

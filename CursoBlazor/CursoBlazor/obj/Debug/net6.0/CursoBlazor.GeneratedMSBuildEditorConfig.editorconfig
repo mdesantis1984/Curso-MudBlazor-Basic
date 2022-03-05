@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CursoBlazor
+build_property.RootNamespace = CursoBlazor
+build_property.ProjectDir = D:\Escritorio\Curso Blazor\CursoBlazor\CursoBlazor\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Escritorio\Curso Blazor\CursoBlazor\CursoBlazor
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/AppBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Avatar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhdGFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Badge.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFkZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Breadcrumbs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJlYWRjcnVtYnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Buttons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV0dG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Card.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Carousel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyb3VzZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Charts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Escritorio/Curso Blazor/CursoBlazor/CursoBlazor/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
