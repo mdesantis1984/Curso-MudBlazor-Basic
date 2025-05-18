@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CursoBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a87b84eb7606961f18d4585ef7ea5e6d4610d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("CursoBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CursoBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
